@@ -1,2 +1,3 @@
-"use strict";
-//# sourceMappingURL=index.js.map
+import '../dist/film';
+import '../dist/interfaceContent';
+import '../dist/purchase';
