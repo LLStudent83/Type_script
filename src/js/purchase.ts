@@ -1,16 +1,18 @@
 import IContent from'./interfaceContent'
 import Movie from './film'
+import Ibasket from './interfaceBasket'
 
-export default class Cart {
-    protected items: IContent[]=[];
+export default class Cart implements Ibasket {
+    items: IContent[]=[];
 
     add(item:IContent): void {
         this.items.push(item);
     }
 
     getitems():IContent[] {
-        return[...this.items];}
+        return[...this.items];
     }
+}
 
     const buyJon: any = new Cart ();
     const avengers: IContent = new Movie ( 2005, 'USA', 'Avengers', 'action', '137 мин./2-17' );
